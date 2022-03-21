@@ -33,10 +33,21 @@ const invalidDisplayName = {
 
 const userNotFound = { status: 404, message: 'User does not exist' };
 const invalidEntries = { status: 400, message: 'Invalid fields' };
+const invalidUser = { status: 401, message: 'Unauthorized user' };
 
 // status code for categories
 
 const requiredName = { status: 400, message: '"name" is required' };
+
+// Status code for post
+
+const titleRequired = { status: 400, message: '"title" is required' };
+const contentRequired = { status: 400, message: '"content" is required' };
+const categoryIdsRequired = { status: 400, message: '"categoryIds" is required' };
+const categoryIdNotFound = { status: 400, message: '"categoryIds" not found' };
+const categoryIdCannotEdited = { status: 400, message: 'Categories cannot be edited' };
+const postNotFound = { status: 404, message: 'Post does not exist' };
+
 
 module.exports = {
   tokenNotFound,
@@ -52,4 +63,11 @@ module.exports = {
   userNotFound,
   invalidEntries,
   requiredName,
+  titleRequired,
+  contentRequired,
+  categoryIdsRequired,
+  categoryIdNotFound,
+  categoryIdCannotEdited,
+  postNotFound,
+  invalidUser,
 };
