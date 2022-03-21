@@ -48,7 +48,6 @@ const categoryIdNotFound = { status: 400, message: '"categoryIds" not found' };
 const categoryIdCannotEdited = { status: 400, message: 'Categories cannot be edited' };
 const postNotFound = { status: 404, message: 'Post does not exist' };
 
-
 module.exports = {
   tokenNotFound,
   tokenInvalid,
