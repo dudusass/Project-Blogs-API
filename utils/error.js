@@ -34,6 +34,10 @@ const invalidDisplayName = {
 const userNotFound = { status: 404, message: 'User does not exist' };
 const invalidEntries = { status: 400, message: 'Invalid fields' };
 
+// status code for categories
+
+const requiredName = { status: 400, message: '"name" is required' };
+
 module.exports = {
   tokenNotFound,
   tokenInvalid,
@@ -47,4 +51,5 @@ module.exports = {
   invalidDisplayName,
   userNotFound,
   invalidEntries,
+  requiredName,
 };
