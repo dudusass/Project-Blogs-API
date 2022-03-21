@@ -32,6 +32,7 @@ const invalidDisplayName = {
 };
 
 const userNotFound = { status: 404, message: 'User does not exist' };
+const invalidEntries = { status: 400, message: 'Invalid fields' };
 
 module.exports = {
   tokenNotFound,
@@ -45,4 +46,5 @@ module.exports = {
   invalidPassword,
   invalidDisplayName,
   userNotFound,
+  invalidEntries,
 };
